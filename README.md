@@ -59,4 +59,11 @@ python app/groceries.py
 Run the stocks report:
 
 ``` sh
-python app/stocks.py
+python -m app.stocks
+```
+
+Run the crypto report:
+
+``` sh
+python -m app.crypto
+```
