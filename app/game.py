@@ -8,7 +8,7 @@ from random import choice
 # USER SELECTION
 #
 
-valid_selctions = ["rock" "paper", "scissors"] #only have to update valid selections in one place
+valid_selections = ["rock" "paper", "scissors"] #only have to update valid selections in one place
 
 u = input("Please choose one of 'Rock', 'Paper', or 'Scissors': ").lower()
 print("USER CHOICE:", u)
