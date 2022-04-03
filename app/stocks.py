@@ -12,7 +12,7 @@ load_dotenv()
 
 ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
 
-symbol = input("Please input a crypto symbol (default: 'NFLX'): ") or "NFLX"
+symbol = input("Please input a ticker symbol (default: 'NFLX'): ") or "NFLX"
 url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={symbol}&apikey={ALPHAVANTAGE_API_KEY}&datatype=csv"
 
 df = read_csv(url)
