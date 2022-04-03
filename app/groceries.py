@@ -35,13 +35,16 @@ print("---------")
 print("THERE ARE", len(products), "PRODUCTS:")
 print("---------")
 
+all_prices = []
+
 for p in products:
     print("..." + p["name"] + "   " + to_usd(p["price"]))
-
-
-all_prices = []
-for p in products:
     all_prices.append(float(p["price"]))
+
+
+#all_prices = []
+#for p in products:
+   # all_prices.append(float(p["price"]))
 
 import statistics
 avg_price = statistics.median(all_prices)
