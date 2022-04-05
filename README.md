@@ -24,8 +24,7 @@ pip install -r requirements.txt
 ## Configuration
 
 Obtain a premium AlphaVantage API Key [here](https://www.alphavantage.co/).
-
-Sign up for a [SendGrid Account](https://sendgrid.com/), verify single sender, then obtain a Sendgrid API Key. 
+ 
 
 
 Set environment variables using a ".env" file approach:
@@ -33,10 +32,21 @@ Set environment variables using a ".env" file approach:
 ```sh
 ALPHAVANTAGE_API_KEY="..."
 
-SENDER_ADDRESS="example@gmail.com"
-SENDGRID_API_KEY="SG...."
 ```
 
+## Tests
+
+To test functions contained in the file utils.py:
+
+```sh
+pytest tests/test_utils.py
+```
+
+To test functions contained in the file game.py:
+
+```sh
+pytest tests/test_game.py
+```
 
 ## Usage
 
@@ -49,12 +59,8 @@ python app/game.py
 Run the inventory report:
 
 ```sh
-python app/groceries.py
+python -m app.groceries
 ```
-
-
-
-
 
 Run the stocks report:
 

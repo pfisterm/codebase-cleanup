@@ -6,13 +6,13 @@ from random import choice
 
 
 def determine_winner(user_choice, computer_choice):
-    '''
+    """
     This function takes in the computer input as well 
     as the user input and determines the winner in 
     a traditional rock-paper-scissors game. 
     Ex: user_choice = rock, computer_choice = paper
     output —> The Computer Wins!
-    '''
+    """
     #return "paper"
     winners = {
         "rock": {

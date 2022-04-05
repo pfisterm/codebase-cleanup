@@ -9,14 +9,17 @@ import os
 
 from app.utils import to_usd
 
+products_filepath = os.path.isfile(os.path.join(os.path.dirname(__file__), "..", "data", "products.csv"))
+default_filepath = os.path.join(os.path.dirname(__file__), "..", "data", "default_products.csv")
+
 
 # checks to see if a products.csv file exists. If not, it uses the default
-if os.path.isfile(os.path.join(os.path.dirname(__file__), "..", "data", "products.csv")) == True:
+if products_filepath == True:
     print("USING CUSTOM PRODUCTS CSV FILE...")
-    csv_filepath = os.path.join(os.path.dirname(__file__), "..", "data", "products.csv")
+    csv_filepath = products_filepath
 else:
     print("USING DEFAULT PRODUCTS CSV FILE...")
-    csv_filepath = os.path.join(os.path.dirname(__file__), "..", "data", "default_products.csv")
+    csv_filepath = default_filepath
 
 
 
