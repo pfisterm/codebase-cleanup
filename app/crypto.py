@@ -17,7 +17,6 @@ ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
 
 symbol = input("Please input a crypto symbol (default: 'BTC'): ") or "BTC"
 url = get_crypto_data(ALPHAVANTAGE_API_KEY, symbol)
-#url = f"https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&market=USD&symbol={symbol}&apikey={ALPHAVANTAGE_API_KEY}"
 response = requests.get(url)
 parsed_response = json.loads(response.text)
 #print(parsed_response)
