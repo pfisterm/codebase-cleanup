@@ -1,12 +1,4 @@
-import os
-from dotenv import load_dotenv
-import requests
-import json
-from pandas import read_csv
 
-load_dotenv()
-
-ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
 
 
 def get_stock_data(symbol):
@@ -30,5 +22,3 @@ def get_crypto_data (symbol):
     parsed_response = json.loads(response.text)
     tsd = parsed_response["Time Series (Digital Currency Daily)"]
     return tsd
-
-
