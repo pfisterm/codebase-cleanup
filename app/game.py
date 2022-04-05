@@ -40,10 +40,6 @@ def determine_winner(user_choice, computer_choice):
 
 if __name__ == "__main__":
 
-
-
-
-
     valid_selections = ["rock", "paper", "scissors"] # only have to update in one place
 
     #
@@ -64,29 +60,8 @@ if __name__ == "__main__":
     print("COMPUTER CHOICE:", c)
 
     #
-    # DETERMINATION OF WINNER
+    #DETERMINATION OF WINNER
     #
-
-    #if u == "rock" and c == "rock":
-    #    print("It's a tie!")
-    #elif u == "rock" and c == "paper":
-    #    print("The computer wins")
-    #elif u == "rock" and c == "scissors":
-    #    print("The user wins")
-    #
-    #elif u == "paper" and c == "rock":
-    #    print("The computer wins")
-    #elif u == "paper" and c == "paper":
-    #    print("It's a tie!")
-    #elif u == "paper" and c == "scissors":
-    #    print("The user wins")
-    #
-    #elif u == "scissors" and c == "rock":
-    #    print("The computer wins")
-    #elif u == "scissors" and c == "paper":
-    #    print("The user wins")
-    #elif u == "scissors" and c == "scissors":
-    #    print("It's a tie!")
 
     winner = determine_winner(u,c)
     if winner == u:
